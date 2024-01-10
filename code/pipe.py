@@ -6,7 +6,6 @@ MIN_HEIGHT_DISPLAY = 100
 MAX_HEIGHT_DISPLAY = 385
 MIN_SPACE_BETWEEN_TWO_PIPES = 45
 MAX_SPACE_BETWEEN_TWO_PIPES = 80
-MAX_PIPES_DISPLAYED = 3
 # create pipes
 
 class Pipe:
@@ -36,5 +35,5 @@ class Pipe:
         for pipe_bottom, pipe_top in self.pipe_list:
             screen.blit(self.pipe_bottom, pipe_bottom)
             screen.blit(self.pipe_top, pipe_top)
-        if len(self.pipe_list) > MAX_PIPES_DISPLAYED:
+        if len(self.pipe_list) > MAX_LENGTH_OF_PIPES_LIST:
             self.pipe_list.pop(0)

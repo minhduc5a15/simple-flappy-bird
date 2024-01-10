@@ -20,7 +20,7 @@ Follow these steps to get started on your Flappy Bird journey:
 
 2. *Navigate* to the cloned repository:
     ```bash
-    cd simple-flappy-bird
+    cd simple-flappy-bird/code
     ```
 
 3. *Install* the required Python package:
